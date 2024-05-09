@@ -3,7 +3,9 @@ import Header from './component/header';
 import Profile from './component/profile';
 import Projects from './component/projects';
 import Contact from './component/contact';
+
 import './App.css'
+import Tools from './component/tools';
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
       <div>
         
       <Profile />
+       <Tools/>
       <Projects />
       <Contact />
 

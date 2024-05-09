@@ -15,7 +15,10 @@ body{
   display: flex;
   justify-content: space-between;
 }
-
+.header-pic:hover{
+  transform: rotate(360deg);
+  transition: 1s ease-in-out;
+}
 .header h1{
   font-size: 40px;
   color: orange;
@@ -46,6 +49,10 @@ body{
   text-align: center;
   padding: 20px;
 }
+.profile:hover {
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
 
 .profile h2 {
   font-size: 40px;
@@ -64,7 +71,7 @@ body{
 
 .profile p {
   max-width: 1000px;
-  font-size: 20px;
+  font-size: 18px;
   margin: 30px auto;
 }
 
@@ -79,7 +86,14 @@ body{
 }
 .project-pic{
   width: 500px;
+  
 }
+.project-pic:hover{
+  width: 550px;
+  transition: 0.4s ease-in-out;
+  
+}
+
 
 .projects h2 {
   font-size: 40px;
@@ -146,3 +160,23 @@ body{
   margin-bottom: 10px;
 }
 
+/* tools start */
+.tools-container{
+  margin: 70px;
+
+}
+.tools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tools-pic{
+  width: 170px;
+}
+.tools-pic:hover{
+  margin-top: 90px;
+  transition: 0.5s ease-in-out;
+}
+.indi-tool{
+  text-align: center;
+}
