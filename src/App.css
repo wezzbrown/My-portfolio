@@ -83,6 +83,7 @@ body{
 .project-box{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .project-pic{
   width: 500px;
