@@ -44,6 +44,7 @@ body{
 }
 
 
+
 /* profile */
 .profile {
   text-align: center;
@@ -181,4 +182,32 @@ body{
 }
 .indi-tool{
   text-align: center;
+}
+
+
+
+@media(max-width: 425px){
+  .header-pic{
+    display: none;
+  }
+  .port-header{
+    margin: auto;
+  }
+
+  .tools-pic{
+    width: 100px;
+  }
+
+
+  .mainlinks{
+    /* display: flex;
+    justify-content: space-evenly; */
+    width: 200px;
+   
+  }
+}
+@media(max-width: 320px){
+  .tools-pic{
+    width: 70px;
+  }
 }
