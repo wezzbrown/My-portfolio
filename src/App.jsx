@@ -6,6 +6,7 @@ import Contact from './component/contact';
 
 import './App.css'
 import Tools from './component/tools';
+import MessageSender from './component/sendmessage';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Profile />
        <Tools/>
       <Projects />
+      <MessageSender/>
       <Contact />
 
       </div>

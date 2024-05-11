@@ -183,6 +183,24 @@ body{
 .indi-tool{
   text-align: center;
 }
+.message{
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+.message-box{
+  font-size: 17px;
+  border: 4px solid blue;
+  border-radius: 20px;
+  padding: 10px;
+  width: 600px;
+  height: 200px;
+}
+.btn-message{
+  background-color: orange;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-size: 15px;
+}
 
 
 
@@ -202,12 +220,19 @@ body{
   .mainlinks{
     /* display: flex;
     justify-content: space-evenly; */
-    width: 200px;
+    width: 300px;
    
   }
 }
 @media(max-width: 320px){
   .tools-pic{
     width: 70px;
+    
+  }
+  .indi-tool{
+    font-size: 10px;
+  }
+  .message-box{
+    width: 200px;
   }
 }
