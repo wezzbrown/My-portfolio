@@ -6,9 +6,9 @@ import Image4 from '../assets/image/image4.png'
 const Header = () => {
   return (
     <header className="header">
-        <img src={Image4} alt="Profile" className="header-pic" />
+      <h1>WEZZDEV</h1>
       <div className='port-header'>
-      <h1>MY PORTFOLIO</h1>
+
       <nav>
         <ul>
 
@@ -18,7 +18,7 @@ const Header = () => {
         </ul>
       </nav>
       </div>
-      <img src={Image4} alt="Profile" className="header-pic" />
+      {/* <img src={Image4} alt="Profile" className="header-pic" /> */}
     </header>
   );
 };

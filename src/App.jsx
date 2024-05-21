@@ -12,9 +12,10 @@ const App = () => {
   return (
     <div className="App">
       <Header />
+      <Profile />
       <div>
         
-      <Profile />
+      
        <Tools/>
       <Projects />
       <MessageSender/>
