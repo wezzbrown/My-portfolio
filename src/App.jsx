@@ -18,7 +18,7 @@ const App = () => {
       
        <Tools/>
       <Projects />
-      <MessageSender/>
+      {/* <MessageSender/> */}
       <Contact />
 
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
 // import './App.css';
+import Lottie from "lottie-react";
+import animation from "./lootie.json"
 import Image6 from "../assets/image/image6.png";
 
 const Projects = () => {
@@ -7,13 +9,13 @@ const Projects = () => {
     {
       name: "Project 1",
       description:
-        "This ia a project i did with bootstrap during my early days in web development.",
+        "This ia a project i did with bootstrap during my early days as a web developmer.",
       link: "https://web-development-group2.vercel.app/",
     },
     {
       name: "Project 2",
       description:
-        "This ia a project i did with html/css during my early days in web development..",
+        "This ia a project i did with html/css during my early days as a web developmer..",
       link: "https://sidebar-transitioned.vercel.app/",
     },
   ];
@@ -39,7 +41,8 @@ const Projects = () => {
             ))}
           </ul>
         </div>
-        <img src={Image6} alt="Profile" className="project-pic" />
+        {/* <img src={Image6} alt="Profile" className="project-pic" /> */}
+        <Lottie animationData={animation} className="project-pic"/>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ body{
 .header {
   background-color: #292F36;
   color: white;
-  padding: 20px;
+  padding: 15px 20px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -26,11 +26,15 @@ body{
 .header nav ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  align-items: end;
+  height: 100%;
 }
 
 .header nav ul li {
-  display: inline;
+  /* display: inline; */
   margin-right: 15px;
+  
 }
 
 .header nav a {
@@ -40,6 +44,9 @@ body{
 
 .header nav a:hover {
   text-decoration: underline;
+}
+.logo{
+  width: 25%;
 }
 
 
@@ -52,7 +59,7 @@ body{
   
 }
 .profile:hover {
-  padding: 10px;
+  padding: 5px;
   transition: 0.5s ease-in-out;
 }
 .profile-box{
@@ -101,6 +108,35 @@ a{
   justify-content: space-evenly;
   contain: content;
 }
+.contact-images{
+  width: 400px;
+}
+.contact-logo{
+  align-items: start;
+}
+.contact-anime{
+  display: flex;
+  width: 300px;
+}
+/* .contact-anime a Lottie {
+  width: 30px;  Set a fixed width 
+  height: 30px; Set a fixed height 
+} */
+.contact-anime {
+  display: flex;
+  justify-content: space-around; /* To evenly space out the icons */
+  align-items: center; /* To vertically center the icons */
+}
+
+.contact-anime a {
+  flex: 1; /* Each anchor tag will take equal space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .main-profile{
   display: flex;
   justify-content: space-evenly;
@@ -152,6 +188,7 @@ h3 {
 .projects h2 {
   font-size: 40px;
   text-align: center;
+  color: #00bfa5;
 }
 .projects a {
   /* font-size: 24px; */
@@ -166,7 +203,7 @@ h3 {
 .mainlinks2{
   text-align: center;
   /* background-color: orange; */
-  border: 2px solid white;
+  border: 2px solid #00bfa5;
   color: white;
   padding: 25px 25px;
   border-radius: 20px;
@@ -196,11 +233,21 @@ h3 {
 
 /* contact */
 .contact {
-  border-top: 1px solid white ;
-  text-align: center;
+  border-top: 1px solid #00bfa5 ;
+  /* text-align: center; */
   padding: 10px 20px;
+  margin-top: 40px;
+  background-color: #1A1E23;
   /* background-color: blue; */
-  color: white;
+  color: #00bfa5;
+  box-shadow: 0 0 20px 0 #00bfa5
+  
+  
+}
+.contact-div{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 60px;
 }
 
 .contact h2 {
@@ -218,16 +265,17 @@ h3 {
   margin-bottom: 10px;
 }
 .footer{
-  display: flex;
-  justify-content: space-between;
+ 
   color: #00bfa5;
+  text-align: left;
+  
 }
 
 /* tools start */
 .tools-container{
   
   /* margin: 70px; */
-  background-color: #1A1E23;
+  /* background-color: #1A1E23; */
   color: #00bfa5;
   padding: 70px 30px;
   margin-top: 70px;
@@ -235,6 +283,14 @@ h3 {
   gap: 25px;
  
 
+}
+.tools-container1{
+  
+  /* margin: 70px; */
+  background-color: #1A1E23;
+}
+.tool-anime{
+  width: 80%;
 }
 .short-id{
   width: 900px;
@@ -246,7 +302,7 @@ h3 {
   color: white;
   border-radius: 30px 0;
   box-shadow: 0 0 20px 0 #00bfa5;
-  border: 2px solid #00bfa5
+  border: 2px solid #00bfa5;
   
   
   
@@ -278,8 +334,21 @@ h3 {
   margin-top: 90px;
   transition: 0.5s ease-in-out;
 }
+.lib h2{
+  width: 400px;
+  padding: 20px;
+  color: white;
+  /* margin-bottom: 60px; */
+  text-align: center;
+  margin: auto;
+  border-radius: 30px 0;
+  box-shadow: 0 0 20px 0 #00bfa5;
+  border: 2px solid #00bfa5;
+}
 .indi-tool{
   text-align: center;
+  margin: 60px 0;
+  padding: 5px 50px;
 }
 .message{
   margin-left: 80px;
@@ -291,15 +360,119 @@ h3 {
   border-radius: 20px;
   padding: 10px;
   width: 600px;
-  height: 200px;
+  height: 150px;
+  border: 2px solid #00bfa5;
+  background-color: #292F36;
+  box-shadow: 0 0 20px 0 #00bfa5;
   
 }
 .btn-message{
   background-color: #00bfa5;
   border: 2px solid white;
   border-radius: 10px;
+  
   font-size: 15px;
 }
+
+
+
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #00bfa5;
+  box-shadow: 0 0 0 2px #00bfa5;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-top: 20px;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #00bfa5;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  /* color: white; */
+  background-color: #00bfa5;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  /* color: white; */
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animated-button .text:hover{
+  color: white;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+  
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: white;
+}
+
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px white;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
 
 
 

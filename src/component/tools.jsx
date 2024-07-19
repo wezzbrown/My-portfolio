@@ -5,9 +5,12 @@ import Reactp from '../assets/image/react.png'
 import Bootstrap from '../assets/image/bootstrap.png'
 import Js from '../assets/image/js.png'
 import About from "../assets/image/About.jpeg";
+import Lottie from "lottie-react";
+import animation from "./lootie2.json"
 
 const Tools = () => {
     return ( 
+        <div className='tools-container1'>
         <div className='tools-container'>
          
           <div className='short-id'>
@@ -20,6 +23,8 @@ const Tools = () => {
                     When I'm not coding, I am writing bolgs, reading, or picking up some new hands-on art project like photography.
                     I like to have my perspective and belief systems challenged so that I see the world through new eyes.
                 </p>
+          </div>
+          <Lottie animationData={animation}  className='tool-anime'/>
           </div>
 
        

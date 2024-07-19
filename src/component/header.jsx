@@ -1,12 +1,12 @@
 import React from 'react';
 // import './App.css';
-import Image4 from '../assets/image/image4.png'
+import Image5 from '../assets/image/logo1.png'
 
 
 const Header = () => {
   return (
     <header className="header">
-      <h1>WEZZDEV</h1>
+      <img src={Image5} alt="Profile" className="logo" />
       <div className='port-header'>
 
       <nav>

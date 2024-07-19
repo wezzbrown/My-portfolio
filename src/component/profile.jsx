@@ -5,6 +5,7 @@ import Image2 from "../assets/image/image2.jpeg";
 import Image3 from "../assets/image/image3.jpeg";
 import Profilepic from "../assets/image/profilepic.png";
 
+
 const Profile = () => {
   return (
     <section id="profile" className="profile">
