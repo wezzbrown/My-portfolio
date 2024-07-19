@@ -29,10 +29,10 @@ const Profile = () => {
             <ul className="icon-list">
               <li>
                 <i className="fas fa-envelope"></i>{" "}
-                sumdaywisdomifiok@gmail.com
+                sundaywisdomifiok@gmail.com
               </li>
               <li>
-                <i className="fas fa-map-marker-alt"></i> Nigeria
+                <i className="fas fa-map-marker-alt"></i> Nigerian
               </li>
               <li>
                 <i className="fas fa-briefcase"></i> Front-end developer
